@@ -19,6 +19,7 @@ class Settings(BaseSettings):
     max_upload_mb: int = 500
     redis_url: str = "redis://localhost:6379/0"
     frontend_origin: str = "http://localhost:3000"
+    cors_origin_regex: str | None = None
     ai_provider: str = "groq"
     groq_api_key: str | None = None
     groq_transcription_model: str = "whisper-large-v3-turbo"
